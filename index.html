@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Credit Card form</title>
+    </head>
+    <body>
+        <div id="app">
+            <credit-card></credit-card>
+        </div>
+        <template id="credit-card-form">
+            <link rel="stylesheet" href="./styles/styles.css">
+            <form id="credit-card-details">
+                <div class="banner hide">
+                    <span class="message">Credit Card Added!</span>
+                </div>
+                <div class="header"><h2>Credit Card Details</h2></div>
+                <div class="field-container">
+                    <div class="row">
+                        <input type="text" id="credit-card-number" name="cardnumber" class="input-field" minlength="16" placeholder="Card Number" required/>
+                    </div>
+
+                    <div class="row">
+                        <input type="text" id="credit-card-name" name="cardname" class="input-field" placeholder="Name" required/>
+                    </div>
+                    <div class="row split">
+                        <input type="text" id="credit-card-expiry-date" name="expiry" class="input-field" minlength="5" placeholder="Valid Thru" required/>
+                        <input type="password" id="credit-card-cvv" name="cvv" class="input-field" minlength="3" placeholder="CVV" required/>
+                    </div>
+                    <div class="row">
+                        <button id="pay-btn" type="submit">Pay</button>
+                    </div>
+                </div>
+            </form>
+        </template>
+        <script src="./src/index.js"></script>
+    </body>
+</html>

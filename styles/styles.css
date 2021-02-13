@@ -1,0 +1,72 @@
+#credit-card-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+}
+.field-container {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+.input-field {
+  background-color: #fff;
+  padding: 0 32px;
+  width: 100%;
+  height: 60px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.input-field:invalid {
+  border: 2px dashed red;
+}
+.input-field:valid {
+  background: url(../images/check.svg) no-repeat;
+  border: 2px solid #125211;
+  background-position: 4px 50%;
+  background-size: 24px 24px;
+}
+.input-field:placeholder-shown {
+  border: 1px solid #ccc;
+}
+.row.split {
+  justify-content: space-between;
+}
+.split .input-field {
+  width: 48%;
+}
+.header {
+  padding: 16px;
+}
+.row {
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+#pay-btn {
+  appearance: none;
+  background: #1976d2;
+  width: 100%;
+  border-radius: 5px;
+  height: 40px;
+  border: 1px solid #1976d2;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.banner {
+  position: absolute;
+  height: 40px;
+  background-color: green;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 16px;
+  border-radius: 5px;
+  top: 10%;
+}
+.hide {
+  display: none;
+}
